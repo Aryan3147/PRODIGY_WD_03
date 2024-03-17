@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    color: #9e8824;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a text shadow for a fancy effect */
+  }
+  
+  body {
+    font-family: "Permanent Marker", cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(45deg, #c9e9f9, #e9c9f9); /* Fancy gradient background */
+  }
+  
+  .board {
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 10px solid #fff; /* Add a border for a fancy look */
+    border-radius: 15px; /* Add border radius for a softer appearance */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Add box shadow for depth */
+  }
+  
+  .cell {
+    font-size: 4rem;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    text-align: center;
+    text-transform: lowercase;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.2s ease; /* Add transition for hover effect */
+  }
+  
+  .cell:hover {
+    transform: scale(1.1); /* Scale up the cell on hover for a fancy effect */
+  }
+  
+  .cell:nth-child(3n) {
+    border-right: none;
+  }
+  
+  .cell:nth-child(n + 7) {
+    border-bottom: none;
+  }
+  
+  .statusText {
+    font-size: 2rem;
+    color: #6a1b1b;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add a text shadow for a fancy effect */
+  }
+  
+  .restartBtn {
+    background-color: #af9e4c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .restartBtn:hover {
+    background-color: #8a7924;
+    transform: scale(1.05); /* Scale up the button on hover for a fancy effect */
+  }
+
+  .connect{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+    flex-direction: column;
+
+}
+  
